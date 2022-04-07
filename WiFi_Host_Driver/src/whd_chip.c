@@ -789,7 +789,7 @@ whd_result_t whd_allow_wlan_bus_to_sleep(whd_driver_t whd_driver)
             }
             else
             {
-                if (btdev->bt_int_cb)
+                if (btdev && btdev->bt_int_cb)
                 {
                     return WHD_SUCCESS;
                 }
